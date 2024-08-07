@@ -1,0 +1,62 @@
+.foother {
+    background-color: rgb(115, 229, 237);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 40px;
+   
+  }
+  
+  .top-foother {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #8bf6f0;
+  }
+  
+  .top-foother h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+  }
+  
+  .top-foother p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .top-foother a {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .bottom-foother {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+  
+  .bottom-foother div {
+    text-align: left;
+  }
+  
+  .bottom-foother h4 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+  }
+  
+  .bottom-foother a {
+    display: block;
+    color: black;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .bottom-foother a i {
+    margin-right: 0.5rem;
+  }
+  
+  .bottom-foother a:hover {
+    color: #fff;
+    transform: scale(1.5);
+  }
+  

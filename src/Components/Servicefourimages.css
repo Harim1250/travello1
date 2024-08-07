@@ -1,0 +1,45 @@
+.bookimages {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    margin: 35px 0; /* Add some margin if needed */
+}
+
+.imagesbook1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagesbook1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.bookimagesdesci {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change to a contrasting color if needed */
+    border-radius: 40px;
+}
+
+.bookimagesdesci h1, .bookimagesdesci p {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bookimagesdesci button{
+    background-color: #28d1d3;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

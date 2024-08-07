@@ -1,0 +1,53 @@
+
+
+.Serviceimg{
+    position: relative;
+}
+
+.Serviceimg img{
+  
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 40px;
+}
+
+.Servicessdesci{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.Servicessdesci h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Servicessdesci p{
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.ourservices{
+    text-align: center;
+    margin: 60px ;
+}
+
+.ourservices h1{
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+

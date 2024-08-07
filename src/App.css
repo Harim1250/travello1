@@ -1,3 +1,4 @@
+/* Existing styles */
 .App {
   text-align: center;
 }
@@ -36,3 +37,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Add any other dark mode specific styles here */

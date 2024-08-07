@@ -1,0 +1,75 @@
+.homeheading {
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 10px;
+   
+    box-shadow: 3px 5px 45px #fff;
+    margin: 20px 20px;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+
+  }
+  .heading h1{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    position: relative; /* Add relative positioning to contain absolute elements */
+    padding: 20px;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse; /* Reverse the order of text and images */
+    
+   
+  }
+  
+  .subheading {
+    flex: 1;
+  }
+  
+  .subheading h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .subheading p {
+    font-size: 1em;
+    color: #555;
+    
+  }
+  
+  .homeimages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative; /* Add relative positioning to contain absolute elements */
+  }
+  
+  .homeimages img {
+    width: 100%;
+    max-width: 280px; /* Adjust the max-width as needed */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 2px 3px 10px hsl(161, 83%, 73%);
+  }
+  
+  /* Specific styling for the second image */
+  .homeimages img:nth-child(1) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    max-width: 290px; /* Adjust size as needed */
+    width: auto;
+  }
+  

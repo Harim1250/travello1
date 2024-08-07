@@ -1,0 +1,171 @@
+.aboutsection{
+
+}
+
+.imgAbout{
+    position: relative;
+}
+
+.imgAbout img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text-about{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text-about h1{
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  
+
+}
+.text-about button{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-about button:hover{
+    background-color: #357ab8;
+    transform: scale(1.5);
+  }
+  
+
+  .about-desci{
+    margin: 30px 40px;
+
+  }
+
+  .about-desci h2{
+    font-size: 2rem;
+    color: rgb(234, 82, 82);
+    margin: 0 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .about-desci p{
+    width: 70%;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    margin: 0px 11rem;
+    align-items: start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .imgdescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+  }
+  .imgdescription img{
+    height: 20rem;
+    width: 20rem;
+    padding: 20px 20px;
+    box-shadow: 10px 10px rgb(0 0 0 0.11);
+    border-radius: 40px;
+   
+  }
+
+  .about-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 20px;
+  }
+
+  
+  
+
+  .img-cart img{
+    height: 20rem;
+    width: 20rem;
+    margin: 10px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 15px 15px 10px #adbada
+    
+    
+  }
+  .h2headimg {
+    text-align: center;
+    margin: 60px ;
+  }
+  
+  .h2headimg h2 {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+
+  .about-cart h1{
+    font-size: 30px;
+    color: rgb(141, 201, 226);
+    margin: 0px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .about-cart p{
+    color: red;
+    margin: 0px 50px;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+/* About video  section*/
+  .about-video{
+    margin: 10rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  
+  }
+  
+  .video-section {
+    text-align: center;
+    position: relative;
+  }
+  .video-section h1{
+    margin: 50px 0;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .your-video-class {
+    width: 100%;
+    max-width: 100%; 
+    cursor: pointer; 
+    border-radius: 80px;
+    
+  }
+  
+  .video-progress-bar {
+    width: 100px;
+    max-width: 100px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  
