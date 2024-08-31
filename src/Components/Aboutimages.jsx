@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-
 import Aboutimagess from '../assets/aboutimage.jpg'
 import './Aboutimages.css'
 import aboutimages1 from '../assets/aboutComfort.jpg'
@@ -8,7 +7,9 @@ import aboutimages3 from '../assets/aboutgiude.jpg'
 import Descimages1 from '../assets/indiaabout.jpg'
 import Descimages2 from '../assets/Chinaabout.jpg'
 import Descimages3 from '../assets/buthanabout.jpg'
-import video from '../assets/ytvideo.mp4'
+
+// External video URL
+const videoUrl = 'https://videos.pexels.com/video-files/3912661/3912661-uhd_2560_1440_25fps.mp4';
 
 function Aboutimages() {
 
@@ -47,7 +48,7 @@ function Aboutimages() {
         </div>
         <div className='text-about'>
         <h1>EXPERIENCE YOURSELF</h1>
-        <button>PLANE YOUR ADVANTURE</button>
+        <button>PLAN YOUR ADVENTURE</button>
         </div>
 
         <div className='about-desci'>
@@ -65,7 +66,7 @@ function Aboutimages() {
 
         </div>
 
-        <div  className='h2headimg'><h2>WHY CHOOSE TRAVELLO</h2></div>
+        <div className='h2headimg'><h2>WHY CHOOSE TRAVELLO</h2></div>
 
         <div className='about-cart'>
             <div className='img-cart'>
@@ -76,7 +77,7 @@ function Aboutimages() {
 
             <div className='img-cart'>
             <img src={aboutimages2} alt="1" />
-            <h1>Luxuries Hotel</h1>
+            <h1>Luxurious Hotel</h1>
             <p>A wonderful serenity has taken to the possession of my entire soul.</p>
             </div>
 
@@ -88,31 +89,29 @@ function Aboutimages() {
         </div>
 
         <div className='about-video'>
-      <div className='video-section'>
-        <h1>FELL THE VIDEO</h1>
-        <video
-          src={video}
-          ref={videoRef}
-          onClick={handleVideoClick}
-          onTimeUpdate={handleTimeUpdate}
-          onLoadedMetadata={handleVideoLoaded}
-          loop
-          muted={!isPlaying}
-          className='your-video-class'
-        ></video>
-        <input
-          type='range'
-          min='0'
-          max='100'
-          value={(currentTime / duration) * 100 || 0}
-          onChange={handleScrub}
-          className='video-progress-bar'
-        />
-      </div>
-    </div>
-
-        
-     
+          <div className='video-section'>
+            <h1>FEEL THE VIDEO</h1>
+            <video
+              src={videoUrl}  // Use the external video URL here
+              ref={videoRef}
+              onClick={handleVideoClick}
+              onTimeUpdate={handleTimeUpdate}
+              onLoadedMetadata={handleVideoLoaded}
+              loop
+              muted={!isPlaying}
+              className='your-video-class'
+              alt="Video content"
+            ></video>
+            <input
+              type='range'
+              min='0'
+              max='100'
+              value={(currentTime / duration) * 100 || 0}
+              onChange={handleScrub}
+              className='video-progress-bar'
+            />
+          </div>
+        </div>
     </div>
   )
 }

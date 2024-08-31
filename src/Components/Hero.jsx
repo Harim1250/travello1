@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Herostyle.css';
 
 function Hero(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [subDropdownOpen, setSubDropdownOpen] = useState({});
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -16,16 +18,40 @@ function Hero(props) {
     }));
   };
 
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <>
       <div className={props.cName}>
         <div className="video-container">
-          <video src={props.Herovideo} autoPlay loop muted className='video-class'></video>
+          {/* Replace iframe with video tag */}
+          {props.videoLink && (
+            <video
+              ref={videoRef}
+              src={props.videoLink}
+              className="video-class"
+              controls
+              muted
+              autoPlay
+              loop
+              onClick={handlePlayPause}
+            >
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
 
         <div className='hero-text'>
           <h1>{props.title}</h1>
           <p>{props.text}</p>
+
           <div className="dropdown">
             <button className={props.btnClass} onClick={toggleDropdown}>
               {props.buttontext} <i className="fas fa-chevron-down"></i>

@@ -1,7 +1,6 @@
-// import React, { useEffect } from 'react';
+import React from 'react';
 import Hero from '../Components/Hero';
 import Navbar from '../Components/Navbar';
-import herovideoo from '../assets/herovideoo.mp4';
 import HomeDown from '../Components/HomeDown';
 import HomeSlider from '../Components/HomeSlider';
 import FourHome from '../Components/FourHome';
@@ -17,20 +16,18 @@ function Home() {
     { url: '', label: 'RIDES', subItems: [{ url: 'https://www.uber.com/in/en/', label: 'UBER' }] }
   ];
 
-
   return (
     <>
       <Navbar />
-     
       <Hero
         cName="Hero"
-        Herovideo={herovideoo}
         title="YOUR JOURNEY OUR SUGGESTION"
         text="'Choose your right destination'"
         buttontext="PLAN YOUR DESTINATION"
         url="/"
         btnClass="show"
         dropdownItems={dropdownItems}
+        videoLink="https://videos.pexels.com/video-files/4205697/4205697-uhd_2560_1440_30fps.mp4"  // Example YouTube video link
       />
       {/* <Chatbot/> */}
       <HomeDown />

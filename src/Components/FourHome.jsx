@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
 import "./FourHome.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import homevideo from '../assets/homevideo22.mp4';
 
-function FourHome() {
+function FourHome() {  // No need to accept videoUrl as a prop
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,20 +33,23 @@ function FourHome() {
     setCurrentTime(scrubTime);
   };
 
+  // Hardcoded video URL
+  const videoUrl = "https://videos.pexels.com/video-files/3126484/3126484-hd_1920_1080_30fps.mp4";
+
   return (
     <div className='fourthparth'>
       <div className='about-video'>
         <div className='video-section'>
           <h1>FEEL THE VIDEO</h1>
           <video
-            src={homevideo}
+            src={videoUrl}  // Use the hardcoded video URL here
             ref={videoRef}
             onTimeUpdate={handleTimeUpdate}
             onLoadedMetadata={handleVideoLoaded}
             loop
             muted={false}
             className='your-video-class'
-             alt="the video four pages home"
+            alt="Video content"
           ></video>
           <div className="video-controls">
             <button onClick={handlePlayClick} disabled={isPlaying} className="play-button">
