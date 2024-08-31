@@ -47,6 +47,7 @@ function FourHome() {
             loop
             muted={false}
             className='your-video-class'
+             alt="the video four pages home"
           ></video>
           <div className="video-controls">
             <button onClick={handlePlayClick} disabled={isPlaying} className="play-button">
