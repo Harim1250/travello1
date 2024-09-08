@@ -1,30 +1,34 @@
 .foother {
-    background-color: rgb(115, 229, 237);
+    background-color: #f1f0fe;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
-    border-radius: 40px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    
+   
+    
+    
    
   }
   
-  .top-foother {
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #8bf6f0;
-  }
-  
+
+
   .top-foother h1 {
     font-size: 2.5rem;
     margin-bottom: .5rem;
+    color: black;
   }
   
   .top-foother p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: black;
   }
   
   .top-foother a {
     margin: 0 1rem;
-    color: #fff;
+    color: black;
     font-size: 2rem;
   }
   
@@ -41,6 +45,7 @@
   .bottom-foother h4 {
     font-size: 1.2rem;
     margin-bottom: .5rem;
+    color: black;
   }
   
   .bottom-foother a {

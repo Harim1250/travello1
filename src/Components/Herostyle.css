@@ -75,13 +75,13 @@
 }
 .hero-text h1{
   font-size: 4rem;
-  color: yellow;
+  color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero-text p{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: yellow;
+  color: white;
   font-size: 2rem;
   text-transform:uppercase;
 }
